@@ -10,6 +10,7 @@
     "item": "minecraft:netherite_scrap"
   },
   "data_component_patch": {
-    "handcrafted_tools:loot": false
+    "handcrafted_tools:loot": false,
+    "minecraft:damage": 0
   }
 }

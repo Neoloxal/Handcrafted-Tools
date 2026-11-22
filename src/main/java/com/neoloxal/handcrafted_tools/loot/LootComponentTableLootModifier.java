@@ -31,6 +31,7 @@ public class LootComponentTableLootModifier extends LootModifier {
         generatedLoot.forEach(stack -> {
             if (stack.is(Tags.Items.TOOLS) || stack.is(Tags.Items.ARMORS)) {
                 stack.set(ModDataComponents.LOOT.get(), true);
+                stack.setDamageValue(0);
                 EnchantmentHelper.updateEnchantments(stack, mutable -> {
                     removeEnchantment(mutable, Enchantments.UNBREAKING, context.getLevel());
                     removeEnchantment(mutable, Enchantments.MENDING, context.getLevel());
