@@ -1,7 +1,11 @@
 package com.neoloxal.handcrafted_tools.mixin;
 
+import com.llamalad7.mixinextras.injector.ModifyReturnValue;
+import com.llamalad7.mixinextras.sugar.Local;
+import com.neoloxal.handcrafted_tools.component.OutlineComponent;
 import com.neoloxal.handcrafted_tools.data_components.ModDataComponents;
 import net.minecraft.core.component.PatchedDataComponentMap;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;

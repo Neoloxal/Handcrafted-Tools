@@ -12,6 +12,7 @@ import com.neoloxal.handcrafted_tools.recipe.ModRecipes;
 import com.neoloxal.paint_palette_lib.Palette;
 import com.neoloxal.paint_palette_lib.PaletteMod;
 import com.neoloxal.paint_palette_lib.PaletteUtils;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -38,7 +39,14 @@ public class HandcraftedTools {
         PaletteUtils.Canvas.createRecipeGenerator(MODID, ModRecipeProvider::new);
         PaletteUtils.Canvas.createTagsGenerator(MODID, ModBlockTagsProvider::new, ModItemTagsProvider::new);
 
-        NeoForge.EVENT_BUS.register(ModGameEvents.class);
         modEventBus.register(ModEvents.class);
+    }
+
+    @Mod(value = MODID, dist = Dist.CLIENT)
+    public static class Client {
+        public Client(IEventBus modEventBus, ModContainer modContainer) {
+            modEventBus.register(ClientModEvents.class);
+            NeoForge.EVENT_BUS.register(ClientGameEvents.class);
+        }
     }
 }
