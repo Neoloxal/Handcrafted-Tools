@@ -30,12 +30,14 @@ public class LootComponentTableLootModifier extends LootModifier {
     protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         generatedLoot.forEach(stack -> {
             if (stack.is(Tags.Items.TOOLS) || stack.is(Tags.Items.ARMORS)) {
-                stack.set(ModDataComponents.LOOT.get(), true);
-                stack.setDamageValue(0);
-                EnchantmentHelper.updateEnchantments(stack, mutable -> {
-                    removeEnchantment(mutable, Enchantments.UNBREAKING, context.getLevel());
-                    removeEnchantment(mutable, Enchantments.MENDING, context.getLevel());
-                });
+                if (stack.getEnchantmentLevel(context.getLevel().registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.BINDING_CURSE)) == 0) {
+                    stack.set(ModDataComponents.LOOT.get(), true);
+                    stack.setDamageValue(0);
+                    EnchantmentHelper.updateEnchantments(stack, mutable -> {
+                        removeEnchantment(mutable, Enchantments.UNBREAKING, context.getLevel());
+                        removeEnchantment(mutable, Enchantments.MENDING, context.getLevel());
+                    });
+                }
             }
         });
         return generatedLoot;
