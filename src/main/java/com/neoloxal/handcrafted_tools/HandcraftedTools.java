@@ -1,6 +1,7 @@
 package com.neoloxal.handcrafted_tools;
 
 import com.mojang.logging.LogUtils;
+import com.neoloxal.handcrafted_tools.compat.JEIHandcraftedToolsPlugin;
 import com.neoloxal.handcrafted_tools.data_components.ModDataComponents;
 import com.neoloxal.handcrafted_tools.datagen.ModBlockTagsProvider;
 import com.neoloxal.handcrafted_tools.datagen.ModDataGen;
