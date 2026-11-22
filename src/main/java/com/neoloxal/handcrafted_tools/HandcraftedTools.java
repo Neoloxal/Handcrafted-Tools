@@ -39,6 +39,7 @@ public class HandcraftedTools {
         PaletteUtils.Canvas.createRecipeGenerator(MODID, ModRecipeProvider::new);
         PaletteUtils.Canvas.createTagsGenerator(MODID, ModBlockTagsProvider::new, ModItemTagsProvider::new);
 
+        NeoForge.EVENT_BUS.register(ModGameEvents.class);
         modEventBus.register(ModEvents.class);
     }
 
