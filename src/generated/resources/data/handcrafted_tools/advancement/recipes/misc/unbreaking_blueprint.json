@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blueprint": {
+      "conditions": {
+        "items": [
+          {
+            "items": "handcrafted_tools:unbreaking_blueprint"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "handcrafted_tools:unbreaking_blueprint"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blueprint"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "handcrafted_tools:unbreaking_blueprint"
+    ]
+  }
+}

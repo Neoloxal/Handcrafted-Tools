@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "handcrafted_tools:unbreaking_blueprint"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "L": {
+      "item": "minecraft:lapis_block"
+    }
+  },
+  "pattern": [
+    "DBD",
+    "DLD",
+    "DDD"
+  ],
+  "result": {
+    "count": 2,
+    "id": "handcrafted_tools:unbreaking_blueprint"
+  }
+}

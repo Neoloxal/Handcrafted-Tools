@@ -1,0 +1,3 @@
+// 1.21.1	2026-11-21T14:45:30.3721142	Global Loot Modifiers : handcrafted_tools
+d2030f2fe1849b60e8a71bb004ddeeb385b2dd0f data/handcrafted_tools/loot_modifiers/add_loot_component.json
+1158ac85afa152801bffa2b6ddf6808b6d18c61b data/neoforge/loot_modifiers/global_loot_modifiers.json

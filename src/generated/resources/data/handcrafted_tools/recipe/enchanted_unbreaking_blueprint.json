@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "handcrafted_tools:unbreaking_blueprint"
+    },
+    "L": {
+      "item": "minecraft:lapis_block"
+    },
+    "l": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "pattern": [
+    "lLl",
+    "LBL",
+    "lLl"
+  ],
+  "result": {
+    "count": 1,
+    "id": "handcrafted_tools:enchanted_unbreaking_blueprint"
+  }
+}
