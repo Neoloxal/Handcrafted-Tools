@@ -1,6 +1,7 @@
 {
   "entries": [
-    "handcrafted_tools:add_loot_component"
+    "handcrafted_tools:add_loot_component_to_all",
+    "handcrafted_tools:add_unbreaking_blueprints_to_structures"
   ],
   "replace": false
 }

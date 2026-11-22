@@ -1,3 +1,4 @@
-// 1.21.1	2026-11-21T14:45:30.3721142	Global Loot Modifiers : handcrafted_tools
-d2030f2fe1849b60e8a71bb004ddeeb385b2dd0f data/handcrafted_tools/loot_modifiers/add_loot_component.json
-1158ac85afa152801bffa2b6ddf6808b6d18c61b data/neoforge/loot_modifiers/global_loot_modifiers.json
+// 1.21.1	2026-11-21T22:11:00.5024637	Global Loot Modifiers : handcrafted_tools
+5e788f94726be00285cdb2cd0c5d61726657cd24 data/handcrafted_tools/loot_modifiers/add_loot_component_to_all.json
+a659de342e8ef8f7768cc0742581fb3392ee5b9a data/handcrafted_tools/loot_modifiers/add_unbreaking_blueprints_to_structures.json
+e632299e66b4dfd54328205593ab54ec5fe55c2a data/neoforge/loot_modifiers/global_loot_modifiers.json

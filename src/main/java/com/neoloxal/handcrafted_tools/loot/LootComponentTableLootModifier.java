@@ -1,4 +1,4 @@
-package com.neoloxal.handcrafted_tools.loot_table;
+package com.neoloxal.handcrafted_tools.loot;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -42,10 +42,10 @@ public class LootComponentTableLootModifier extends LootModifier {
 
     @Override
     public MapCodec<? extends IGlobalLootModifier> codec() {
-        return ModGlobalLootModifierSerializers.LOOT_COMPONENT_TABLE_LOOT_MODIFIER.get();
+        return ModLootModifiers.LOOT_COMPONENT_TABLE_LOOT.get();
     }
 
     private static void removeEnchantment(ItemEnchantments.Mutable mutable, ResourceKey<Enchantment> enchantment, Level level) {
-        mutable.set(level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.UNBREAKING), 0);
+        mutable.set(level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(enchantment), 0);
     }
 }
