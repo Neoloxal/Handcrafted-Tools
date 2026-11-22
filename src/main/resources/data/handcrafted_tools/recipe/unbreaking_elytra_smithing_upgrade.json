@@ -1,0 +1,16 @@
+{
+  "type": "handcrafted_tools:data_component_smithing_recipe",
+  "template": {
+    "item": "handcrafted_tools:enchanted_unbreaking_blueprint"
+  },
+  "base": {
+    "item": "minecraft:elytra"
+  },
+  "addition": {
+    "item": "minecraft:netherite_scrap"
+  },
+  "data_component_patch": {
+    "handcrafted_tools:loot": false,
+    "minecraft:damage": 0
+  }
+}

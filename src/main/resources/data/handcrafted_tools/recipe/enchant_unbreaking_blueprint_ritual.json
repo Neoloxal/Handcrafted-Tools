@@ -1,0 +1,13 @@
+{
+  "type": "simple_rituals:ritual",
+  "size": 1,
+  "ingredients": [
+    {"item": "handcrafted_tools:unbreaking_blueprint"},
+    {"item": "minecraft:lapis_block"}
+  ],
+  "output": {
+    "id": "handcrafted_tools:enchanted_unbreaking_blueprint",
+    "count": 1
+  },
+  "special_effect": "spawn_lightning"
+}

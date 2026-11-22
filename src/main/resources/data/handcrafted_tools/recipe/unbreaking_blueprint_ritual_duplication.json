@@ -1,0 +1,14 @@
+{
+  "type": "simple_rituals:ritual",
+  "size": 2,
+  "ingredients": [
+    {"item": "handcrafted_tools:unbreaking_blueprint"},
+    {"item": "minecraft:diamond"},
+    {"item": "handcrafted_tools:unbreaking_blueprint"},
+    {"item": "minecraft:lapis_lazuli"}
+  ],
+  "output": {
+    "id": "handcrafted_tools:unbreaking_blueprint",
+    "count": 2
+  }
+}
