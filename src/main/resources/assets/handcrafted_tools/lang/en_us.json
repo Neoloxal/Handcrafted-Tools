@@ -1,3 +1,7 @@
 {
-  "item.handcrafted_tools.loot": "★"
+  "item.handcrafted_tools.loot": "★",
+  "item.handcrafted_tools.unbreaking_blueprint": "Unbreaking Blueprint",
+  "item.handcrafted_tools.enchanted_unbreaking_blueprint": "Enchanted Unbreaking Blueprint",
+  "item.handcrafted_tools.enchanted_unbreaking_blueprint.ingredients": "Netherite Scrap",
+  "item.handcrafted_tools.enchanted_unbreaking_blueprint.applies_to": "Tools & Armor"
 }
