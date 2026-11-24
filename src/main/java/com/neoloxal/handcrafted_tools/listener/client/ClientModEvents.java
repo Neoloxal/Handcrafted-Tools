@@ -1,4 +1,4 @@
-package com.neoloxal.handcrafted_tools;
+package com.neoloxal.handcrafted_tools.listener.client;
 
 import com.neoloxal.handcrafted_tools.component.ClientOutlineComponent;
 import com.neoloxal.handcrafted_tools.component.OutlineComponent;

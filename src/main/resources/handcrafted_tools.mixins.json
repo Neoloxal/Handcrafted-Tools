@@ -3,7 +3,8 @@
   "minVersion": "0.8",
   "package": "com.neoloxal.handcrafted_tools.mixin",
   "mixins": [
-    "ItemStackMixin"
+    "ItemStackMixin",
+    "GrindstoneMenuMixin"
   ],
   "injectors": {
     "defaultRequire": 1

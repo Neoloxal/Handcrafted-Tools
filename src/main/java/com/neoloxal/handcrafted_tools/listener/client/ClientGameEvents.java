@@ -1,4 +1,4 @@
-package com.neoloxal.handcrafted_tools;
+package com.neoloxal.handcrafted_tools.listener.client;
 
 import com.mojang.datafixers.util.Either;
 import com.neoloxal.handcrafted_tools.component.OutlineComponent;

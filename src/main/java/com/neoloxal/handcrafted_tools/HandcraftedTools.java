@@ -7,6 +7,9 @@ import com.neoloxal.handcrafted_tools.datagen.ModDataGen;
 import com.neoloxal.handcrafted_tools.datagen.ModItemTagsProvider;
 import com.neoloxal.handcrafted_tools.datagen.ModRecipeProvider;
 import com.neoloxal.handcrafted_tools.item.ModItems;
+import com.neoloxal.handcrafted_tools.listener.client.ClientGameEvents;
+import com.neoloxal.handcrafted_tools.listener.client.ClientModEvents;
+import com.neoloxal.handcrafted_tools.listener.ModEvents;
 import com.neoloxal.handcrafted_tools.loot.ModLootModifiers;
 import com.neoloxal.handcrafted_tools.recipe.ModRecipes;
 import com.neoloxal.paint_palette_lib.Palette;
@@ -39,7 +42,6 @@ public class HandcraftedTools {
         PaletteUtils.Canvas.createRecipeGenerator(MODID, ModRecipeProvider::new);
         PaletteUtils.Canvas.createTagsGenerator(MODID, ModBlockTagsProvider::new, ModItemTagsProvider::new);
 
-        NeoForge.EVENT_BUS.register(ModGameEvents.class);
         modEventBus.register(ModEvents.class);
     }
 

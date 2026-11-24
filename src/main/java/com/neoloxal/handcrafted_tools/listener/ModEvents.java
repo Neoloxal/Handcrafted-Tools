@@ -1,5 +1,6 @@
-package com.neoloxal.handcrafted_tools;
+package com.neoloxal.handcrafted_tools.listener;
 
+import com.neoloxal.handcrafted_tools.HandcraftedTools;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
